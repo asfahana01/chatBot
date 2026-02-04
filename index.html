@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChatBuddy</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="app-header">
+      <h1>ChatBuddy</h1>
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="slider" title="Toggle dark mode"></span>
+        </label>
+      </div>
+    </header>
+
+    <main class="chat" id="chat">
+      <ul class="messages" id="messages" aria-live="polite"></ul>
+    </main>
+
+    <form class="composer" id="composer" autocomplete="off">
+      <textarea id="input" placeholder="Type a message..." rows="1" aria-label="Message input"></textarea>
+      <button type="submit" id="sendBtn">Send</button>
+    </form>
+
+    <footer class="app-footer">
+      <small>Built with ❤️ — friendly, contextual chatbot</small>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
